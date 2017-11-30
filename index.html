@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title>Data dashboard</title>
+		<link rel="stylesheet" href="assets/font-awesome-4.7.0/css/font-awesome.min.css">
+		<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+		<link rel="icon" href="assets/images/logo_lab.ico">
+		<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="header" id="headerSection">
+      <div class="logo"><img src="assets/images/logo-laboratoria.svg" alt=""></div>
+        <div class="menu">
+          <a href=""><i class="fa fa-bars" aria-hidden="true"></i></a>
+      </div>
+  </div>
+    <!-- imagen de presentacion -->
+  <div class="main" id="mainSection">
+    <div class="box-title" id="box-title">
+      <div class="welcome" id="welcome">
+        <h1><img class="present" src="assets/images/present_lab.jpg" alt="laboratoria">Dashboard</h1>
+      </div>
+
+        <!--menu -->
+      <div class="user">
+        <h3>Te damos la bienvenida a nuestro</h3>
+        <h3>Dashboard</h3>
+        <p>Conoce a nuestros talenos, aqui te presentamos los</p> 
+        <p>perfiles de nuestras alumnas.</p> 
+      </div>
+        
+      <div>
+       <div class="country peru">
+        <h2><Perú></h2>
+        <select class="select-country" onchange="country(this.value)">
+          <option value="0">Selecciona una Sede</option>
+          <option value="AQP">Arequipa</option>
+          <option value="LIM">Lima</option>
+        </select>
+       </div> 
+       <div class="country chile">
+         <h2><Chile></h2>
+         <select class="select-country" onchange="country(this.value)">
+           <option value="0">Selecciona una Sede</option>
+           <option value="SCL">Santiago</option>
+         </select>
+       </div>
+       <div class="country mexico">
+         <h2><México></h2>
+         <select class="select-country" onchange="country(this.value)">
+          <option value="0">Selecciona una Sede</option>
+          <option value="CDMX">Ciudad de México</option>
+         </select>
+   </div>
+  </div>
+   
+ <!-- Base de datos -->
+ <script src="./js/data.js"></script>
+ <!-- Aquí va tus archivos JS -->
+  <script src="./js/app.js"></script>
+
+</body>
+</html>
